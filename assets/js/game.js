@@ -124,6 +124,6 @@ var endGame = function() {
 };
 
 
-startGame (); 
+// startGame (); 
   
 
