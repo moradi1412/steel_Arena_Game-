@@ -12,6 +12,23 @@ var enemyAttack = 12;
 // console.log(enemyNames[0]);
 // console.log(enemyNames[3]);
 
+
+// to display the player name once entered 
+document.getElementById("player1").innerHTML = playerName;
+document.getElementById("player2").innerHTML = enemyNames[Math.floor(Math.random() * enemyNames.length)];
+console.log(Math.floor(Math.random() * enemyNames.length));
+
+//Welcome message to the player
+document.getElementById("modal-message").innerHTML = "The game begins, "; 
+const closeModalButton = document.getElementById("modal-close-btn");
+closeModalButton.addEventListener("click", function() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+}); 
+
+
+
+
 // fight function (now with parameter for enemy's name)
 var fight = function(enemyName) {
   while (playerHealth > 0 && enemyHealth > 0) {

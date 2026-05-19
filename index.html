@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Steel Area Game</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Steel Area Game</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
 
 
 
 
-    <h1>Welcome to the Steel Area Game</h1>
+  <h1>Welcome to the Steel Area Game</h1>
 
 
-    <section class="game-section">
-      <p>Get ready to battle in the Steel Area!</p>
-    </section>
+  <section class="game-section">
+    <p>Get ready to battle in the Steel Area!</p>
+
+    <div class="players-container">
+      <div class="player1">
+
+        <img src="./assets/Gemini_Generated_Image_bz8x0kbz8x0kbz8x.png" alt="" srcset="">
+        <h2 id="player1"></h2>
+        <h3 id="player1-health">Health: 100</h3>
+        <h3 id="player1-money">Money: 10</h3>
+        <h3 id="player1-attack">Attack: 10</h3>
+
+      </div>
+
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <p id="modal-message"></p>
+          <button id="modal-close-btn">Close</button>
+        </div>
+
+      </div>
+      <div class="button-container">
+        <button id="fight-btn">Fight</button>
+        <button id="skip-btn">Skip</button>
+      </div>
+
+      <div class="player2">
+
+        <img src="./assets/Gemini_Generated_Image_c09xclc09xclc09x.png" alt="" srcset="">
+        <h2 id="player2"></h2>
+        <h3 id="player2-health">Health: 50</h3>
+        <h3 id="player2-money">Money: 0</h3>
+        <h3 id="player2-attack">Attack: 5</h3>
+      </div>
+    </div>
+
+  </section>
 
 
 
-    <script src="./assets/js/game.js"></script>
-  </body>
+  <script src="./assets/js/game.js"></script>
+</body>
+
 </html>
