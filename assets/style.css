@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #000000;
+    color: #ffffff;
+    margin: auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
